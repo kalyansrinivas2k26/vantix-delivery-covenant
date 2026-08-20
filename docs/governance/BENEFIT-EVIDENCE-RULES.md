@@ -3,24 +3,24 @@
 ## Principle
 Outputs are not outcomes.
 
-Required benefit definition:
-- benefitId
-- benefitOwner
-- baseline
-- target
-- measurement method
-- source
-- cadence
-- expected realisation window
-- acceptance authority
-- sustainment check
+Every benefit definition requires:
+- benefit ID;
+- benefit owner;
+- baseline;
+- target;
+- measurement method;
+- source;
+- measurement cadence;
+- expected realisation window;
+- acceptance authority;
+- sustainment check.
 
 States:
-planned, baseline_missing, measurement_pending, early_signal, partially_evidenced, achieved, not_achieved, inconclusive, deteriorated, sustained, relapsed.
+`planned`, `baseline_missing`, `measurement_pending`, `early_signal`, `partially_evidenced`, `achieved`, `not_achieved`, `inconclusive`, `deteriorated`, `sustained`, `relapsed`.
 
-Deterministic restrictions:
-- `achieved` requires baseline/target logic and measured evidence;
-- `sustained` requires a later measurement window;
+Restrictions:
+- `achieved` requires measured evidence against defined baseline/target logic;
+- `sustained` requires later-period evidence;
 - task completion alone cannot set `achieved`;
 - missing baseline routes to `baseline_missing`;
-- insufficient or contradictory measurements route to `inconclusive`.
+- contradictory/insufficient measurement routes to `inconclusive`.

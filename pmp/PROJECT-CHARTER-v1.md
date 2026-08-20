@@ -1,44 +1,19 @@
 # VANTIX Delivery Covenant — Project Charter v1
 
 ## Business need
-Agile execution can appear healthy while project delivery silently diverges from approved business outcomes, scope, authority, milestones, risk boundaries and expected benefits.
+Agile execution can look healthy while the project silently diverges from approved outcomes, scope, decision rights, milestones, risk boundaries and expected benefits.
 
 ## Purpose
-Create an evidence-governed reconciliation layer that compares delivery reality with approved governance commitments and routes material divergence to the correct human authority.
+Create an evidence-governed reconciliation layer between delivery reality and governance commitment.
 
-## Primary objective
-Surface material divergence early enough for evidence-based human intervention before it becomes an avoidable governance or benefits failure.
+## Objective
+Surface material divergence early enough for the correct human authority to intervene with traceable evidence.
 
 ## In scope
-- delivery/governance reconciliation;
-- scope, milestone, benefit, risk, dependency and authority drift;
-- cumulative micro-change detection;
-- milestone evidence assurance;
-- benefit evidence assurance;
-- contradiction preservation;
-- bounded AI interpretation;
-- human governance routing;
-- audit and executive decision outputs.
+Drift, cumulative change, authority validation, milestone evidence, benefit evidence, contradiction preservation, bounded AI interpretation, human routing, audit and executive decision outputs.
 
 ## Out of scope
-- replacing Jira, Salesforce or PPM tools;
-- autonomous sprint planning;
-- AI-estimated story points;
-- autonomous scope/risk/funding approval;
-- unverified benefit claims;
-- production deployment claims in the portfolio build.
+Replacing Jira/Salesforce/PPM tools, autonomous sprint planning, AI story-point estimation, autonomous scope/risk/funding approval, unsupported benefit claims and production-readiness claims.
 
 ## Success criteria
-- deterministic control rules are explicit and versioned;
-- consequential decisions remain human-owned;
-- negative/failure modes are demonstrably tested;
-- final decisions are traceable to evidence, policy and authority;
-- CI and release evidence are reproducible.
-
-## Constraints
-- synthetic portfolio defaults until owner-confirmed policy is supplied;
-- no customer data in public fixtures;
-- no unsupported maturity or compliance claims.
-
-## Governance principle
-Evidence establishes what happened. Policy determines whether a control threshold is crossed. AI may interpret but cannot approve consequential decisions.
+Deterministic controls are explicit and versioned; consequential decisions remain human-owned; failure modes are tested; final decisions trace to evidence, policy and authority; CI/release evidence is reproducible.

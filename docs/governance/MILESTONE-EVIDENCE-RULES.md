@@ -1,9 +1,9 @@
 # Milestone Evidence Rules
 
-A milestone cannot move to `accepted` from delivery status alone.
+A milestone cannot be accepted because related stories are Done.
 
-Minimum evidence checks:
-- milestone acceptance criteria satisfied;
+Required checks:
+- acceptance criteria satisfied;
 - required deliverables present;
 - dependencies resolved or formally accepted;
 - open defects assessed;
@@ -13,7 +13,7 @@ Minimum evidence checks:
 - audit evidence linked;
 - benefit measurement plan confirmed where relevant.
 
-State machine:
-`not_started` → `in_progress` → `delivery_complete_unverified` → `evidence_incomplete` / `exception_approval_required` → `ready_for_human_acceptance` → `accepted` / `rejected` → `reopened`
+State model:
+`not_started` → `in_progress` → `delivery_complete_unverified` → `evidence_incomplete` / `exception_approval_required` → `ready_for_human_acceptance` → `accepted` / `rejected` → `reopened`.
 
-Fail-closed rule: missing mandatory evidence cannot produce `accepted`.
+Missing mandatory evidence cannot produce `accepted`.

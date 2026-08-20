@@ -1,6 +1,6 @@
-# Gate 1 Acceptance Checklist
+# Gate 1 Acceptance
 
-## Required design artefacts
+## Required artefacts
 - [x] Project charter
 - [x] Outcome map
 - [x] Two-ledger operating model
@@ -13,17 +13,14 @@
 - [x] Risk model
 - [x] Deterministic policy catalogue
 
-## Owner validation still required
-- [ ] Confirm or retain synthetic scope materiality threshold
-- [ ] Confirm or retain synthetic contingency threshold
-- [ ] Confirm or retain synthetic risk matrix
+## Owner validation
+- [ ] Confirm or retain synthetic 10% material scope threshold
+- [ ] Confirm or retain synthetic 20% contingency review threshold
+- [ ] Confirm or retain synthetic 1–5 risk matrix
 - [ ] Confirm or retain synthetic authority roles
 - [ ] Confirm or retain evidence freshness windows
 
-## Gate 1 decision
+## Gate decision
 **CONDITIONAL PASS**
 
-The business/governance design is complete for a portfolio build. It becomes a full PASS when the owner explicitly confirms whether synthetic defaults remain the portfolio baseline.
-
-## Next gate
-Gate 2 — Canonical Data & Schemas.
+The design is complete for a portfolio build. Full PASS requires explicit confirmation that the labelled synthetic defaults are accepted as the portfolio baseline or replacement with real organisational policy.

@@ -2,7 +2,7 @@
 
 | Decision | Default authority | AI authority | System action |
 |---|---|---|---|
-| Backlog prioritisation | Product Owner | None | Record/validate |
+| Backlog prioritisation | Product Owner | None | Record / validate |
 | Story estimation | Delivery Team | None | Prohibited from deciding |
 | Sprint commitment | Delivery Team | None | Prohibited from deciding |
 | Minor requirement clarification | Product Owner within boundary | None | Validate boundary |
@@ -14,4 +14,4 @@
 | Rebaseline | Sponsor / PMO / Governance Board | None | Detect + route |
 | Project closure | Sponsor / Governance Body | None | Prohibited from deciding |
 
-This matrix is a synthetic portfolio default until owner-confirmed governance is supplied.
+These are explicitly labelled portfolio defaults pending owner confirmation.
