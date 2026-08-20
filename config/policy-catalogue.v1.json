@@ -1,0 +1,57 @@
+{
+  "policyVersion": "1.0.0-draft",
+  "status": "gate1-synthetic-defaults-pending-owner-validation",
+  "policies": [
+    {
+      "id": "POL-SCOPE-001",
+      "name": "Material scope delta",
+      "threshold": 10,
+      "unit": "percent",
+      "action": "formal_change_request_required"
+    },
+    {
+      "id": "POL-MICRO-001",
+      "name": "Repeated minor change count",
+      "threshold": 3,
+      "windowDays": 30,
+      "action": "governance_review_required"
+    },
+    {
+      "id": "POL-CONT-001",
+      "name": "Contingency review threshold",
+      "threshold": 20,
+      "unit": "percent",
+      "action": "governance_review_required"
+    },
+    {
+      "id": "POL-AUTH-001",
+      "name": "Authority sufficiency",
+      "rule": "recorded_role must be in required_authority_roles",
+      "action": "human_review"
+    },
+    {
+      "id": "POL-MS-001",
+      "name": "Milestone acceptance evidence",
+      "rule": "all mandatory evidence checks true",
+      "action": "ready_for_human_acceptance"
+    },
+    {
+      "id": "POL-BEN-001",
+      "name": "Benefit achieved",
+      "rule": "baseline_and_target_defined AND measured_evidence_present",
+      "action": "eligible_for_human_acceptance"
+    },
+    {
+      "id": "POL-AI-001",
+      "name": "AI minimum confidence",
+      "threshold": 0.8,
+      "action": "human_review_if_below"
+    },
+    {
+      "id": "POL-FAIL-001",
+      "name": "Fail closed",
+      "rule": "malformed OR schema_invalid OR unsupported OR authority_exceeded",
+      "action": "human_review"
+    }
+  ]
+}

@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.2.0 — Gate 1 business & governance design
+- Added versioned project charter and outcome map.
+- Added two-ledger operating model.
+- Added v1 decision-rights matrix.
+- Added drift taxonomy and cumulative micro-change model.
+- Added milestone and benefit evidence rules.
+- Added Gate 1 CTQ definitions and deterministic risk model.
+- Added versioned deterministic policy catalogue.
+- Added Gate 1 acceptance record.
+- Gate 0 CI baseline retained; Gate 1 remains conditional pending owner confirmation of synthetic defaults.
+
+## 0.1.3 — GitHub CI upload hardening
+- Added `.gitignore`, `.gitattributes` and `.editorconfig`.
+- Added visible `GITHUB-CI-SETUP.md` with macOS hidden-folder upload guidance.
+- Confirmed `.github/workflows/ci.yml` and repository-governance files are included in the package.
+- Regenerated integrity manifest and validation evidence.
+
 ## 0.1.2 — Gate 0 evidence alignment
 - Added Process Excellence challenge questions required by Gate 0.
 - Added candidate defect taxonomy and starter control plan.
