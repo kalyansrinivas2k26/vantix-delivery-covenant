@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://viridianai.in/schemas/milestone-evidence.schema.json",
+  "title": "Milestone Evidence",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "milestoneId",
+    "projectId",
+    "state",
+    "acceptanceCriteriaSatisfied",
+    "evidenceIds"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "milestoneId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+    },
+    "projectId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+    },
+    "state": {
+      "enum": [
+        "not_started",
+        "in_progress",
+        "delivery_complete_unverified",
+        "evidence_incomplete",
+        "exception_approval_required",
+        "ready_for_human_acceptance",
+        "accepted",
+        "rejected",
+        "reopened"
+      ]
+    },
+    "acceptanceCriteriaSatisfied": {
+      "type": "boolean"
+    },
+    "dependenciesResolved": {
+      "type": "boolean"
+    },
+    "openDefectsAssessed": {
+      "type": "boolean"
+    },
+    "exceptionsApproved": {
+      "type": "boolean"
+    },
+    "businessOwnerConfirmed": {
+      "type": "boolean"
+    },
+    "acceptanceAuthorityVerified": {
+      "type": "boolean"
+    },
+    "evidenceIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  },
+  "additionalProperties": false
+}

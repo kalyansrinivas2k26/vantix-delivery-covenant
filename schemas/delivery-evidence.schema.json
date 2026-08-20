@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://viridianai.in/schemas/delivery-evidence.schema.json",
+  "title": "Delivery Evidence",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "evidenceId",
+    "projectId",
+    "observedAt",
+    "sourceSystem",
+    "storyId",
+    "status"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidenceId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+    },
+    "projectId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+    },
+    "observedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "sourceSystem": {
+      "type": "string",
+      "minLength": 1
+    },
+    "storyId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+    },
+    "epicId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sprintId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "sprintGoal": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "acceptanceCriteria": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "definitionOfReady": {
+      "type": "boolean"
+    },
+    "definitionOfDone": {
+      "type": "boolean"
+    },
+    "status": {
+      "enum": [
+        "not_started",
+        "in_progress",
+        "done",
+        "blocked",
+        "cancelled"
+      ]
+    },
+    "linkedOutcomeId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "defects": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "rework": {
+      "type": "boolean"
+    },
+    "evidenceFreshnessDays": {
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "additionalProperties": false
+}

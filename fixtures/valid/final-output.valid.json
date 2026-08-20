@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "0.1.0",
+  "runId": "RUN-001",
+  "correlationId": "CORR-001",
+  "projectId": "PRJ-DELIVERY-001",
+  "sourceSystems": [
+    "synthetic-jira-like",
+    "synthetic-governance-ledger"
+  ],
+  "observedAt": "2026-08-17T04:22:00+05:30",
+  "policyVersion": "0.1.0",
+  "measurementVersion": "0.1.0",
+  "deliveryHealth": "green",
+  "governanceAlignment": "red",
+  "milestoneConfidence": "amber",
+  "benefitEvidenceStatus": "measurement_pending",
+  "authorityComplianceStatus": "missing_evidence",
+  "driftFindings": [
+    "DRIFT-001"
+  ],
+  "contradictionFindings": [
+    "CONTRA-001"
+  ],
+  "evidenceIds": [
+    "EVID-001",
+    "EVID-GOV-001"
+  ],
+  "missingEvidence": [
+    "Confirmed organisation-specific materiality threshold"
+  ],
+  "recommendedAction": "governance_review",
+  "requiredAuthority": [
+    "change_authority"
+  ],
+  "AIConfidence": 0.91,
+  "humanDecisionStatus": "pending",
+  "lifecycleState": "human_review",
+  "limitations": [
+    "Synthetic portfolio evidence",
+    "Policy thresholds pending owner validation"
+  ]
+}

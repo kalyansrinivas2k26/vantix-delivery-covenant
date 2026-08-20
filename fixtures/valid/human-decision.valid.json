@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "0.1.0",
+  "humanDecisionId": "HUM-001",
+  "projectId": "PRJ-DELIVERY-001",
+  "authorityRole": "change_authority",
+  "decision": "more_evidence_required",
+  "decidedAt": "2026-08-17T04:20:00+05:30",
+  "decisionNotes": "Synthetic Gate 0 example.",
+  "evidenceIds": [
+    "EVID-001",
+    "EVID-GOV-001"
+  ]
+}

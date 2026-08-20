@@ -1,0 +1,18 @@
+{
+  "manifestVersion": "0.1.0",
+  "packageVersion": "0.1.2",
+  "evidenceClasses": [
+    "design",
+    "synthetic-fixture",
+    "machine-validation",
+    "integrity"
+  ],
+  "liveEvidenceIncluded": false,
+  "requiredBeforeReleaseCandidate": [
+    "deterministic-engine-test-evidence",
+    "n8n-clean-import-evidence",
+    "fail-closed-route-evidence",
+    "live-provider-test-pack",
+    "security-and-sanitisation-evidence"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "0.1.0",
+  "decisionId": "DEC-001",
+  "projectId": "PRJ-DELIVERY-001",
+  "decisionType": "risk_acceptance",
+  "requiredAuthority": [
+    "risk_owner"
+  ],
+  "recordedDecisionMakerRole": "risk_owner",
+  "authorityStatus": "sufficient",
+  "evidenceIds": [
+    "EVID-GOV-001"
+  ],
+  "approvedAt": "2026-08-17T04:10:00+05:30"
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "0.1.0",
+  "evidenceId": "EVID-001",
+  "projectId": "PRJ-DELIVERY-001",
+  "observedAt": "2026-08-17T04:00:00+05:30",
+  "sourceSystem": "synthetic-jira-like",
+  "storyId": "STORY-001",
+  "epicId": "EPIC-001",
+  "sprintId": "SPRINT-12",
+  "sprintGoal": "Complete controlled release readiness",
+  "acceptanceCriteria": [
+    "Evidence linked",
+    "Control tests pass"
+  ],
+  "definitionOfReady": true,
+  "definitionOfDone": true,
+  "status": "done",
+  "linkedOutcomeId": "OUTCOME-001",
+  "blockers": [],
+  "defects": 0,
+  "rework": false,
+  "evidenceFreshnessDays": 0
+}

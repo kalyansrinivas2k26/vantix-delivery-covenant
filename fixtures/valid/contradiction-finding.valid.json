@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "0.1.0",
+  "findingId": "CONTRA-001",
+  "projectId": "PRJ-DELIVERY-001",
+  "indicators": [
+    {
+      "name": "deliveryHealth",
+      "status": "green"
+    },
+    {
+      "name": "governanceAlignment",
+      "status": "red"
+    }
+  ],
+  "status": "human_review_required",
+  "explanation": "Delivery completion is healthy while governance alignment is not.",
+  "evidenceIds": [
+    "EVID-001",
+    "EVID-GOV-001"
+  ]
+}

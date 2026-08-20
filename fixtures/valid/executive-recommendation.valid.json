@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "0.1.0",
+  "recommendationId": "REC-001",
+  "projectId": "PRJ-DELIVERY-001",
+  "recommendedAction": "governance_review",
+  "requiredAuthority": [
+    "change_authority"
+  ],
+  "evidenceIds": [
+    "EVID-001",
+    "EVID-GOV-001"
+  ],
+  "ruleIds": [
+    "RULE-SCOPE-001"
+  ],
+  "limitations": [
+    "Synthetic thresholds pending owner validation"
+  ],
+  "aiConfidence": 0.91
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "0.1.0",
+  "changeId": "CHG-001",
+  "projectId": "PRJ-DELIVERY-001",
+  "observedAt": "2026-08-17T04:05:00+05:30",
+  "changeType": "scope",
+  "description": "Synthetic minor scope expansion",
+  "materiality": "minor",
+  "estimatedDeltaPercent": 4,
+  "evidenceIds": [
+    "EVID-001"
+  ]
+}

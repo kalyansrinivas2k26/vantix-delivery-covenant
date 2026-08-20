@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestoneId": "MS-001",
+  "projectId": "PRJ-DELIVERY-001",
+  "state": "ready_for_human_acceptance",
+  "acceptanceCriteriaSatisfied": true,
+  "dependenciesResolved": true,
+  "openDefectsAssessed": true,
+  "exceptionsApproved": true,
+  "businessOwnerConfirmed": true,
+  "acceptanceAuthorityVerified": true,
+  "evidenceIds": [
+    "EVID-001",
+    "EVID-GOV-001"
+  ]
+}

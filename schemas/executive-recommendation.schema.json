@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://viridianai.in/schemas/executive-recommendation.schema.json",
+  "title": "Executive Recommendation",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "recommendationId",
+    "projectId",
+    "recommendedAction",
+    "requiredAuthority",
+    "evidenceIds",
+    "limitations"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "recommendationId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+    },
+    "projectId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+    },
+    "recommendedAction": {
+      "enum": [
+        "continue_within_boundaries",
+        "correct_backlog_alignment",
+        "governance_review",
+        "formal_change_request",
+        "reassess_milestone",
+        "rebaseline",
+        "suspend_affected_work",
+        "obtain_risk_acceptance",
+        "benefit_owner_review",
+        "pause",
+        "terminate",
+        "human_review"
+      ]
+    },
+    "requiredAuthority": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "evidenceIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "ruleIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "aiConfidence": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    }
+  },
+  "additionalProperties": false
+}

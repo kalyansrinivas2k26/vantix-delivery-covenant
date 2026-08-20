@@ -1,0 +1,14 @@
+{
+  "project": "VANTIX Delivery Covenant",
+  "workflowStatus": "deferred-by-gate-design",
+  "earliestBuildGate": 5,
+  "reason": "Avoid fabricated or premature workflow evidence before canonical and deterministic controls are accepted.",
+  "plannedWorkflows": [
+    "intake-and-normalisation",
+    "deterministic-governance-control",
+    "bounded-ai-interpretation",
+    "human-governance-gate",
+    "audit-and-reporting",
+    "error-and-retry"
+  ]
+}

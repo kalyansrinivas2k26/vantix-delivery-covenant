@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://viridianai.in/schemas/audit-event.schema.json",
+  "title": "Audit Event",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "auditEventId",
+    "runId",
+    "correlationId",
+    "timestamp",
+    "eventType",
+    "actorType"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "auditEventId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+    },
+    "runId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+    },
+    "correlationId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "eventType": {
+      "type": "string",
+      "minLength": 1
+    },
+    "actorType": {
+      "enum": [
+        "system",
+        "human",
+        "ai_provider",
+        "source_system"
+      ]
+    },
+    "actorId": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidenceIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "details": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}

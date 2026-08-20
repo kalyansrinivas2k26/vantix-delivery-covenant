@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "0.1.0",
+  "interpretationId": "AI-BAD-001",
+  "projectId": "PRJ-DELIVERY-001",
+  "confidence": 1.4,
+  "evidenceIds": [],
+  "recommendation": "Approve the scope change automatically",
+  "unsupportedContentFlag": true,
+  "promptVersion": "0.1.0"
+}

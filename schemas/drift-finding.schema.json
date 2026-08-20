@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://viridianai.in/schemas/drift-finding.schema.json",
+  "title": "Drift Finding",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "findingId",
+    "projectId",
+    "driftType",
+    "classification",
+    "ruleId",
+    "evidenceIds"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "findingId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+    },
+    "projectId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+    },
+    "driftType": {
+      "enum": [
+        "scope",
+        "milestone",
+        "benefit",
+        "risk",
+        "dependency",
+        "cost_contingency",
+        "acceptance_criteria",
+        "authority",
+        "delivery_forecast",
+        "governance_documentation"
+      ]
+    },
+    "classification": {
+      "enum": [
+        "none",
+        "isolated_minor_change",
+        "repeated_minor_change",
+        "cumulative_material_change",
+        "unapproved_baseline_change",
+        "governance_review_required",
+        "formal_change_request_required",
+        "insufficient_evidence"
+      ]
+    },
+    "ruleId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+    },
+    "evidenceIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "explanation": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false
+}

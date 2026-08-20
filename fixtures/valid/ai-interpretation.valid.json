@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "0.1.0",
+  "interpretationId": "AI-001",
+  "projectId": "PRJ-DELIVERY-001",
+  "confidence": 0.91,
+  "evidenceIds": [
+    "EVID-001",
+    "EVID-GOV-001"
+  ],
+  "recommendation": "Escalate the scope variance for governance review.",
+  "uncertainties": [
+    "Organisation-specific materiality threshold remains synthetic"
+  ],
+  "unsupportedContentFlag": false,
+  "authorityRequested": "change_authority",
+  "modelId": "synthetic-provider",
+  "promptVersion": "0.1.0"
+}

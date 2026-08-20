@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://viridianai.in/schemas/change-event.schema.json",
+  "title": "Change Event",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "changeId",
+    "projectId",
+    "observedAt",
+    "changeType",
+    "materiality",
+    "evidenceIds"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "changeId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+    },
+    "projectId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+    },
+    "observedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "changeType": {
+      "enum": [
+        "scope",
+        "acceptance_criteria",
+        "dependency",
+        "control",
+        "contingency",
+        "milestone",
+        "benefit",
+        "other"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "materiality": {
+      "enum": [
+        "minor",
+        "material",
+        "unknown"
+      ]
+    },
+    "estimatedDeltaPercent": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "evidenceIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  },
+  "additionalProperties": false
+}

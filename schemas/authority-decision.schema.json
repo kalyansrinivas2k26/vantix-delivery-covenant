@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://viridianai.in/schemas/authority-decision.schema.json",
+  "title": "Authority Decision",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "decisionId",
+    "projectId",
+    "decisionType",
+    "requiredAuthority",
+    "recordedDecisionMakerRole",
+    "authorityStatus",
+    "evidenceIds"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decisionId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+    },
+    "projectId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+    },
+    "decisionType": {
+      "type": "string",
+      "minLength": 1
+    },
+    "requiredAuthority": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "recordedDecisionMakerRole": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authorityStatus": {
+      "enum": [
+        "sufficient",
+        "insufficient",
+        "missing",
+        "unknown"
+      ]
+    },
+    "evidenceIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "approvedAt": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false
+}

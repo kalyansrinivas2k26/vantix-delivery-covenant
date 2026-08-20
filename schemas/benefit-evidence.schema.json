@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://viridianai.in/schemas/benefit-evidence.schema.json",
+  "title": "Benefit Evidence",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "benefitId",
+    "projectId",
+    "benefitOwner",
+    "state",
+    "baselineStatus",
+    "evidenceIds"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "benefitId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+    },
+    "projectId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+    },
+    "benefitOwner": {
+      "type": "string",
+      "minLength": 1
+    },
+    "state": {
+      "enum": [
+        "planned",
+        "baseline_missing",
+        "measurement_pending",
+        "early_signal",
+        "partially_evidenced",
+        "achieved",
+        "not_achieved",
+        "inconclusive",
+        "deteriorated",
+        "sustained",
+        "relapsed"
+      ]
+    },
+    "baselineStatus": {
+      "enum": [
+        "present",
+        "missing",
+        "not_applicable"
+      ]
+    },
+    "baselineValue": {
+      "type": [
+        "number",
+        "string",
+        "null"
+      ]
+    },
+    "targetValue": {
+      "type": [
+        "number",
+        "string",
+        "null"
+      ]
+    },
+    "measuredValue": {
+      "type": [
+        "number",
+        "string",
+        "null"
+      ]
+    },
+    "evidenceIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  },
+  "additionalProperties": false
+}

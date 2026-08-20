@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "0.1.0",
+  "auditEventId": "AUD-001",
+  "runId": "RUN-001",
+  "correlationId": "CORR-001",
+  "timestamp": "2026-08-17T04:21:00+05:30",
+  "eventType": "human_review_requested",
+  "actorType": "system",
+  "actorId": null,
+  "evidenceIds": [
+    "EVID-001"
+  ],
+  "details": {
+    "reason": "governance_review_required"
+  }
+}

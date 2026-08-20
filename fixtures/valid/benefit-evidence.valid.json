@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "0.1.0",
+  "benefitId": "BEN-001",
+  "projectId": "PRJ-DELIVERY-001",
+  "benefitOwner": "benefit_owner",
+  "state": "measurement_pending",
+  "baselineStatus": "present",
+  "baselineValue": 10,
+  "targetValue": 7,
+  "measuredValue": null,
+  "evidenceIds": [
+    "EVID-GOV-001"
+  ]
+}

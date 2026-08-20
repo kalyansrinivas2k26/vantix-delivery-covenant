@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://viridianai.in/schemas/risk-item.schema.json",
+  "title": "Risk Item",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "riskId",
+    "projectId",
+    "description",
+    "ownerRole",
+    "status",
+    "evidenceIds"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "riskId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+    },
+    "projectId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ownerRole": {
+      "type": "string",
+      "minLength": 1
+    },
+    "probability": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 5
+    },
+    "impact": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1,
+      "maximum": 5
+    },
+    "status": {
+      "enum": [
+        "open",
+        "accepted",
+        "mitigated",
+        "closed",
+        "escalated"
+      ]
+    },
+    "evidenceIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  },
+  "additionalProperties": false
+}

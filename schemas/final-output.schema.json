@@ -1,0 +1,199 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://viridianai.in/schemas/delivery-covenant-decision-envelope.schema.json",
+  "title": "Delivery Covenant Decision Envelope",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "runId",
+    "correlationId",
+    "projectId",
+    "sourceSystems",
+    "observedAt",
+    "policyVersion",
+    "measurementVersion",
+    "deliveryHealth",
+    "governanceAlignment",
+    "milestoneConfidence",
+    "benefitEvidenceStatus",
+    "authorityComplianceStatus",
+    "driftFindings",
+    "contradictionFindings",
+    "evidenceIds",
+    "missingEvidence",
+    "recommendedAction",
+    "requiredAuthority",
+    "AIConfidence",
+    "humanDecisionStatus",
+    "lifecycleState",
+    "limitations"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "runId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+    },
+    "correlationId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+    },
+    "projectId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{2,127}$"
+    },
+    "sourceSystems": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "observedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "policyVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "measurementVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "deliveryHealth": {
+      "enum": [
+        "green",
+        "amber",
+        "red",
+        "unknown"
+      ]
+    },
+    "governanceAlignment": {
+      "enum": [
+        "green",
+        "amber",
+        "red",
+        "unknown"
+      ]
+    },
+    "milestoneConfidence": {
+      "enum": [
+        "green",
+        "amber",
+        "red",
+        "unknown"
+      ]
+    },
+    "benefitEvidenceStatus": {
+      "enum": [
+        "planned",
+        "baseline_missing",
+        "measurement_pending",
+        "early_signal",
+        "partially_evidenced",
+        "achieved",
+        "not_achieved",
+        "inconclusive",
+        "deteriorated",
+        "sustained",
+        "relapsed"
+      ]
+    },
+    "authorityComplianceStatus": {
+      "enum": [
+        "compliant_with_configured_policy",
+        "breach",
+        "missing_evidence",
+        "unknown"
+      ]
+    },
+    "driftFindings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "contradictionFindings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidenceIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "missingEvidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "recommendedAction": {
+      "enum": [
+        "continue_within_boundaries",
+        "correct_backlog_alignment",
+        "governance_review",
+        "formal_change_request",
+        "reassess_milestone",
+        "rebaseline",
+        "suspend_affected_work",
+        "obtain_risk_acceptance",
+        "benefit_owner_review",
+        "pause",
+        "terminate",
+        "human_review"
+      ]
+    },
+    "requiredAuthority": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "AIConfidence": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1
+    },
+    "humanDecisionStatus": {
+      "enum": [
+        "not_required",
+        "pending",
+        "approved",
+        "modified_then_approved",
+        "rejected",
+        "deferred",
+        "more_evidence_required"
+      ]
+    },
+    "lifecycleState": {
+      "enum": [
+        "draft",
+        "validated",
+        "human_review",
+        "final"
+      ]
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,47 @@
+{
+  "measurementVersion": "0.1.0",
+  "status": "candidate-operational-definitions",
+  "ctqs": [
+    {
+      "id": "CTQ-001",
+      "name": "Material changes approved before implementation",
+      "unit": "material_change",
+      "defect": "implemented_before_required_approval",
+      "opportunitiesPerUnit": 1
+    },
+    {
+      "id": "CTQ-002",
+      "name": "Milestones with complete acceptance evidence",
+      "unit": "milestone_assessment",
+      "defect": "accepted_with_incomplete_evidence",
+      "opportunitiesPerUnit": 1
+    },
+    {
+      "id": "CTQ-003",
+      "name": "Benefit claims with measured outcome evidence",
+      "unit": "benefit_claim",
+      "defect": "claim_without_measurement_evidence",
+      "opportunitiesPerUnit": 1
+    },
+    {
+      "id": "CTQ-004",
+      "name": "Unauthorised decision rate",
+      "unit": "governance_decision",
+      "defect": "decision_by_insufficient_authority",
+      "opportunitiesPerUnit": 1
+    },
+    {
+      "id": "CTQ-005",
+      "name": "Cumulative micro-change escape rate",
+      "unit": "change_window",
+      "defect": "material_cumulative_change_not_escalated",
+      "opportunitiesPerUnit": 1
+    }
+  ],
+  "capabilityClaimsAllowed": false,
+  "limitations": [
+    "Population and sampling boundary not yet established",
+    "Process stability not established",
+    "Measurement-system assessment pending"
+  ]
+}

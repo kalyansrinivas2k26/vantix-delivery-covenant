@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "0.1.0",
+  "commitmentId": "COMMIT-001",
+  "projectId": "PRJ-DELIVERY-001",
+  "governanceVersion": "0.1.0",
+  "approvedOutcome": "Reduce ungoverned delivery drift",
+  "scopeInclusions": [
+    "Governance reconciliation"
+  ],
+  "scopeExclusions": [
+    "Autonomous approvals"
+  ],
+  "milestoneIds": [
+    "MS-001"
+  ],
+  "riskIds": [
+    "RISK-001"
+  ],
+  "decisionAuthorityIds": [
+    "AUTH-001"
+  ],
+  "benefitIds": [
+    "BEN-001"
+  ],
+  "approvedAt": "2026-08-01T10:00:00+05:30",
+  "evidenceId": "EVID-GOV-001"
+}

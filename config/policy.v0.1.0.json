@@ -1,0 +1,53 @@
+{
+  "policyVersion": "0.1.0",
+  "status": "synthetic-defaults-pending-owner-validation",
+  "materiality": {
+    "cumulativeMinorChangeCount": 3,
+    "cumulativeLookbackDays": 30,
+    "materialScopeDeltaPercent": 10,
+    "contingencyConsumptionReviewPercent": 20
+  },
+  "freshnessDays": {
+    "deliveryEvidence": 7,
+    "governanceEvidence": 30,
+    "benefitEvidence": 30
+  },
+  "ai": {
+    "minimumConfidence": 0.8,
+    "failClosed": true
+  },
+  "authorityRoles": {
+    "backlog_prioritisation": [
+      "product_owner"
+    ],
+    "story_estimation": [
+      "delivery_team"
+    ],
+    "sprint_commitment": [
+      "delivery_team"
+    ],
+    "material_scope_change": [
+      "sponsor",
+      "change_authority"
+    ],
+    "risk_acceptance": [
+      "risk_owner"
+    ],
+    "milestone_acceptance": [
+      "business_owner",
+      "project_owner"
+    ],
+    "benefit_acceptance": [
+      "benefit_owner"
+    ],
+    "rebaseline": [
+      "sponsor",
+      "pmo",
+      "governance_board"
+    ],
+    "project_closure": [
+      "sponsor",
+      "governance_body"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "0.1.0",
+  "findingId": "DRIFT-001",
+  "projectId": "PRJ-DELIVERY-001",
+  "driftType": "scope",
+  "classification": "governance_review_required",
+  "ruleId": "RULE-SCOPE-001",
+  "evidenceIds": [
+    "EVID-001",
+    "EVID-GOV-001"
+  ],
+  "explanation": "Synthetic example of delivery evidence requiring governance review."
+}

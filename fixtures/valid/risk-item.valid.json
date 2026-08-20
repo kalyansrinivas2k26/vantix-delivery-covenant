@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "0.1.0",
+  "riskId": "RISK-001",
+  "projectId": "PRJ-DELIVERY-001",
+  "description": "Synthetic governance drift risk",
+  "ownerRole": "risk_owner",
+  "probability": 3,
+  "impact": 4,
+  "status": "open",
+  "evidenceIds": [
+    "EVID-GOV-001"
+  ]
+}
