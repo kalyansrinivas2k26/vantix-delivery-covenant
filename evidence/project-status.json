@@ -1,0 +1,23 @@
+{
+  "project": "VANTIX Delivery Covenant",
+  "packageVersion": "0.2.2",
+  "maturityTier": "Portfolio Preview",
+  "gateStatus": {
+    "gate0": "pass",
+    "gate1": "conditional_pass",
+    "gate2": "not_started",
+    "gate3": "not_started",
+    "gate4": "not_started",
+    "gate5": "not_started",
+    "gate6": "not_started",
+    "gate7": "not_started",
+    "gate8": "not_started"
+  },
+  "claims": {
+    "n8nImplemented": false,
+    "liveProviderValidated": false,
+    "liveSalesforceValidated": false,
+    "ciGreenOnGitHub": false,
+    "verifiedPortfolioBuild": false
+  }
+}
