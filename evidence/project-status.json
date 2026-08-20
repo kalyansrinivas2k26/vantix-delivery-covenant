@@ -1,11 +1,11 @@
 {
   "project": "VANTIX Delivery Covenant",
-  "packageVersion": "0.2.2",
+  "packageVersion": "0.3.0",
   "maturityTier": "Portfolio Preview",
   "gateStatus": {
     "gate0": "pass",
-    "gate1": "conditional_pass",
-    "gate2": "not_started",
+    "gate1": "pass",
+    "gate2": "pass",
     "gate3": "not_started",
     "gate4": "not_started",
     "gate5": "not_started",

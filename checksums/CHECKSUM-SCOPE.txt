@@ -16,3 +16,13 @@ evidence/project-status.json
 scripts/generate_checksums.py
 scripts/verify_checksums.py
 checksums/CHECKSUM-SCOPE.txt
+docs/gates/GATE-2-CANONICAL-DATA-SCHEMAS.md
+docs/gates/GATE-2-ACCEPTANCE.md
+docs/data/CANONICAL-DATA-DICTIONARY.md
+docs/data/EVIDENCE-ID-STANDARD.md
+docs/data/VERSIONING-STANDARD.md
+docs/data/SCHEMA-COVERAGE-MATRIX.md
+docs/data/VALIDATION-RULES.md
+fixtures/canonical/delivery-covenant.synthetic-dataset.v1.json
+fixtures/canonical/gate2-negative-fixture-index.json
+GATE-2-UPLOAD-NOTES.md

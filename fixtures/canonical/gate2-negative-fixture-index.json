@@ -1,0 +1,36 @@
+{
+  "fixturePackVersion": "1.0.0",
+  "classification": "synthetic-negative-fixtures",
+  "cases": [
+    {
+      "id": "NEG-001",
+      "contract": "final-output",
+      "defect": "missing_policy_version",
+      "expected": "schema_fail"
+    },
+    {
+      "id": "NEG-002",
+      "contract": "ai-interpretation",
+      "defect": "confidence_above_one",
+      "expected": "schema_fail"
+    },
+    {
+      "id": "NEG-003",
+      "contract": "authority-decision",
+      "defect": "unknown_authority_status",
+      "expected": "schema_fail"
+    },
+    {
+      "id": "NEG-004",
+      "contract": "benefit-evidence",
+      "defect": "unsupported_benefit_state",
+      "expected": "schema_fail"
+    },
+    {
+      "id": "NEG-005",
+      "contract": "milestone-evidence",
+      "defect": "unsupported_milestone_state",
+      "expected": "schema_fail"
+    }
+  ]
+}

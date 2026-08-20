@@ -1,0 +1,105 @@
+{
+  "datasetVersion": "1.0.0",
+  "classification": "synthetic-public-fixture",
+  "project": {
+    "projectId": "PRJ-DELIVERY-001",
+    "name": "Delivery Covenant Synthetic Programme",
+    "approvedOutcomeId": "OUTCOME-001"
+  },
+  "deliveryEvidence": [
+    {
+      "schemaVersion": "0.1.0",
+      "evidenceId": "EVID-001",
+      "projectId": "PRJ-DELIVERY-001",
+      "observedAt": "2026-08-20T09:00:00+05:30",
+      "sourceSystem": "synthetic-agile-source",
+      "storyId": "STORY-001",
+      "epicId": "EPIC-001",
+      "sprintId": "SPRINT-12",
+      "sprintGoal": "Complete controlled release readiness",
+      "acceptanceCriteria": [
+        "Release evidence linked",
+        "Required control tests pass"
+      ],
+      "definitionOfReady": true,
+      "definitionOfDone": true,
+      "status": "done",
+      "linkedOutcomeId": "OUTCOME-001",
+      "blockers": [],
+      "defects": 0,
+      "rework": false,
+      "evidenceFreshnessDays": 0
+    }
+  ],
+  "governanceCommitments": [
+    {
+      "schemaVersion": "0.1.0",
+      "commitmentId": "COMMIT-001",
+      "projectId": "PRJ-DELIVERY-001",
+      "governanceVersion": "1.0.0",
+      "approvedOutcome": "Reduce ungoverned delivery drift",
+      "scopeInclusions": [
+        "Governance reconciliation",
+        "Evidence-gated milestone assurance"
+      ],
+      "scopeExclusions": [
+        "Autonomous approvals"
+      ],
+      "milestoneIds": [
+        "MS-001"
+      ],
+      "riskIds": [
+        "RISK-001"
+      ],
+      "decisionAuthorityIds": [
+        "AUTH-001"
+      ],
+      "benefitIds": [
+        "BEN-001"
+      ],
+      "approvedAt": "2026-08-01T10:00:00+05:30",
+      "evidenceId": "EVID-GOV-001"
+    }
+  ],
+  "changeEvents": [
+    {
+      "schemaVersion": "0.1.0",
+      "changeId": "CHG-001",
+      "projectId": "PRJ-DELIVERY-001",
+      "observedAt": "2026-08-20T09:05:00+05:30",
+      "changeType": "scope",
+      "description": "Synthetic minor scope expansion",
+      "materiality": "minor",
+      "estimatedDeltaPercent": 4,
+      "evidenceIds": [
+        "EVID-001"
+      ]
+    },
+    {
+      "schemaVersion": "0.1.0",
+      "changeId": "CHG-002",
+      "projectId": "PRJ-DELIVERY-001",
+      "observedAt": "2026-08-20T09:10:00+05:30",
+      "changeType": "acceptance_criteria",
+      "description": "Synthetic acceptance-criteria modification",
+      "materiality": "minor",
+      "estimatedDeltaPercent": 3,
+      "evidenceIds": [
+        "EVID-001"
+      ]
+    },
+    {
+      "schemaVersion": "0.1.0",
+      "changeId": "CHG-003",
+      "projectId": "PRJ-DELIVERY-001",
+      "observedAt": "2026-08-20T09:15:00+05:30",
+      "changeType": "dependency",
+      "description": "Synthetic dependency movement",
+      "materiality": "minor",
+      "estimatedDeltaPercent": 4,
+      "evidenceIds": [
+        "EVID-001"
+      ]
+    }
+  ]
+}
