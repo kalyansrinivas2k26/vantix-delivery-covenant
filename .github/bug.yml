@@ -1,0 +1,30 @@
+name: Defect report
+description: Report a reproducible portfolio defect without sensitive data.
+title: "[DEFECT] "
+labels: ["defect"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Defect
+      description: What is incorrect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
+      description: Use synthetic or sanitised evidence only.
+    validations:
+      required: true
+  - type: input
+    id: requirement
+    attributes:
+      label: Requirement or control ID
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: This issue contains no credentials, private environment identifiers or customer data.
+          required: true
